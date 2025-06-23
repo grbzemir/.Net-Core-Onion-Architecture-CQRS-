@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProductApp.Domain.Commen
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
+        public Guid Id { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }
