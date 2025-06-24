@@ -36,14 +36,14 @@ namespace ProductApp.Persistence.Repositories
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<List<T>> GetAllAsync()
+        public async Task<List<T>> GetAll()
         {
             
             return await _context.Set<T>().ToListAsync();
             
         }
 
-        public async Task<T> GetByIdAsync(Guid Id)
+        public async Task<T> GetById(Guid Id)
         {
             return await _context.Set<T>().FindAsync(Id);
         }
