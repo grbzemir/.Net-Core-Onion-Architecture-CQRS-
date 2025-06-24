@@ -13,8 +13,8 @@ namespace ProductApp.Application.Interfaces.Repository
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(Guid Id);
         Task<T> AddAsync(T entity);
-        //Task<T> UpdateAsync(T entity);
-        //Task<bool> DeleteAsync(Guid Id);
+        Task<T> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(Guid Id);
 
     }
 }
